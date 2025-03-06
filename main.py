@@ -1,36 +1,3 @@
-# from api_interaction import ApiInteraction
-# from transcript_processor import TranscriptProcessor
-# from letter_formatter import LetterFormatter
-
-# # Paths
-# INPUT_PATH = "C:/Users/INSIGHT/Desktop/4th Year Sem 2/ChatGPTAPI/TranscriptReader/patientenv/transcript.txt"
-# OUTPUT_PATH = "C:/Users/INSIGHT/Desktop/4th Year Sem 2/ChatGPTAPI/TranscriptReader/patientenv/patient_letter.txt"
-
-# def main():
-#     try:
-#         # Step 1: Load the transcript
-#         transcript_processor = TranscriptProcessor(INPUT_PATH)
-#         transcript = transcript_processor.load_transcript()
-
-#         # Step 2: Generate the patient follow-up letter
-#         api_interaction = ApiInteraction()
-#         letter = api_interaction.generate_patient_letter(transcript)
-
-#         # Step 3: Optionally format the letter (if needed)
-#         formatted_letter = LetterFormatter.format_letter(letter)
-
-#         # Step 4: Save the generated letter to a file
-#         with open(OUTPUT_PATH, "w", encoding="utf-8") as file:
-#             file.write(formatted_letter)
-        
-#         print(f"Patient letter saved to {OUTPUT_PATH}")
-    
-#     except Exception as e:
-#         print(f"Error: {e}")
-
-# if __name__ == "__main__":
-#     main()
-
 
 import streamlit as st
 from file_manager import FileManager
